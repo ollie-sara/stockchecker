@@ -4,6 +4,7 @@ Discord bot that simply checks the stock of an item on a website in a given inte
 ---
 
 ## Starting The Bot
+#### 0. Install python, python-dotenv, beautifulsoup4, discord.py and urllib3
 #### 1. Register a new bot on the [Discord Developer Portal](https://discord.com/developers/applications). Follow the instructions given on the site.
 #### 2. Create and configure your .env file.
 You need to configure it as follows:
