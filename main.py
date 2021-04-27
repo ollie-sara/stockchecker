@@ -23,6 +23,7 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 GUILD = os.getenv('DESTINATION_GUILD')
 CHANNEL = os.getenv('DESTINATION_CHANNEL')
 ROLE = os.getenv('NOTIFICATION_ROLE')
+ADMIN = os.getenv('ADMIN_USER')
 bot = commands.Bot(command_prefix='=> ', description="PS5 Tacker CH")
 http = urllib3.PoolManager()
 dbpath = os.path.abspath('./sources.db')
@@ -52,7 +53,7 @@ async def on_ready():
 # COMMANDS
 @bot.command(name='interval')
 async def interval(ctx, interval):
-    if ctx.author.id != 108305736131440640:
+    if ctx.author.id != ADMIN:
         await ctx.send('Command could not be executed since you are not ollie.', delete_afer=15)
         return
     await ctx.message.delete()
@@ -63,7 +64,7 @@ async def interval(ctx, interval):
 
 @bot.command(name='fixEntry')
 async def fixEntry(ctx, title, toFix, content):
-    if ctx.author.id != 108305736131440640:
+    if ctx.author.id != ADMIN:
         await ctx.send('Command could not be executed since you are not ollie.', delete_afer=15)
         return
     await ctx.message.delete()
@@ -85,7 +86,7 @@ async def fixEntry(ctx, title, toFix, content):
 
 @bot.command(name='rmEntry')
 async def rmEntry(ctx, title):
-    if ctx.author.id != 108305736131440640:
+    if ctx.author.id != ADMIN:
         await ctx.send('Command could not be executed since you are not ollie.', delete_afer=15)
         return
     await ctx.message.delete()
@@ -102,7 +103,7 @@ async def rmEntry(ctx, title):
 
 @bot.command(name='addEntry')
 async def rmEntry(ctx, title, url, selector, outOfStock):
-    if ctx.author.id != 108305736131440640:
+    if ctx.author.id != ADMIN:
         await ctx.send('Command could not be executed since you are not ollie.', delete_afer=15)
         return
     await ctx.message.delete()
