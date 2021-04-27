@@ -13,6 +13,7 @@ DISCORD_TOKEN=<BOT TOKEN>
 DESTINATION_GUILD=<SERVER ID>
 DESTINATION_CHANNEL=<CHANNEL ID>
 NOTIFICATION_ROLE=<ROLE ID>
+ADMIN_USER=<YOUR USER ID>
 ```
 The bot uses the destination channel as a sort of "console" and will constantly spam messages into it.
 Make sure you use a seperate, dedicated tracking channel for this.
