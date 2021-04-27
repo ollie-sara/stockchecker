@@ -26,7 +26,7 @@ It will then search the element for a string you supplied, and will notify you i
 
 You use various commands with the prefix `=>` in Discord to edit the database (although you could technically do it with a database browser).
 
-- `=> addEntry "<title>" "<url>" "<css selector>" "<string to search">` Adds an entry to the database. Will automatically be searched next run.
+- `=> addEntry "<title>" "<url>" "<css selector>" "<string to search>"` Adds an entry to the database. Will automatically be searched next run.
 ```
 title: title of the entry (mediamarkt, digitec, newegg, etc.)
 url: url that should be visited
@@ -36,7 +36,7 @@ string to search: string the stockchecker should look out for
                   ("Stock currently not available", etc.)
 ```
 
-- `=> rmEntry "<title">` Removes an entry from the database
+- `=> rmEntry "<title>"` Removes an entry from the database
 ```
 title: title of the entry (mediamarkt, digitec, newegg, etc.)
 ```
