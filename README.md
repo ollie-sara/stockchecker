@@ -30,8 +30,10 @@ You use various commands with the prefix `=>` in Discord to edit the database (a
 ```
 title: title of the entry (mediamarkt, digitec, newegg, etc.)
 url: url that should be visited
-css selector: the DOM element given by a css selector (".availability .outOfStock", or something similar)
-string to search: string the stockchecker should look out for ("Stock currently not available", "Not deliverable", etc.)
+css selector: the DOM element given by a css selector 
+              (".availability .outOfStock", or similar)
+string to search: string the stockchecker should look out for 
+                  ("Stock currently not available", etc.)
 ```
 
 - `=> rmEntry "<title">` Removes an entry from the database
